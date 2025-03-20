@@ -7,7 +7,7 @@ A Java-based application inspired by Genius.com, designed for managing song lyri
 ## Getting Started  
 Refer to the **project documentation** for full details on requirements, implementation guidelines, and evaluation criteria.  
 
-📄 **[Read the full project doc](./Advanced_Programming_Eid_Project_Doc.pdf)**  
+📄 **[Read the full project doc](https://github.com/Advanced-Programming-1403/Nowruz-Project/blob/main/Advanced%20Programming%20-%20Eid%20Project%20Doc.pdf)**  
 
 ## Setup  
 - Ensure Java and Maven/Gradle are installed  
