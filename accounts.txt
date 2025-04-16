@@ -1,0 +1,4 @@
+Artist,Ed Sheeran,31,ed@example.com,ed_sheeran,artistPass2
+User,Jane Smith,28,jane@example.com,jane_smith,password456
+User,John Doe,25,john@example.com,john_doe,password123
+Artist,Taylor Swift,33,taylor@example.com,taylor_swift,artistPass1
