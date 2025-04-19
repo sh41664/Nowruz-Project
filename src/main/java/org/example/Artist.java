@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-import static jdk.internal.icu.lang.UCharacter.getAge;
+
 
 public class Artist extends Account {
     private List<Song> songs = new ArrayList<>();

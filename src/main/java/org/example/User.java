@@ -4,7 +4,6 @@ package org.example;
 import java.util.ArrayList;
 import java.util.List;
 
-import static jdk.internal.icu.lang.UCharacter.getAge;
 
 public class User extends Account {
     private List<Artist> followedArtists = new ArrayList<>();

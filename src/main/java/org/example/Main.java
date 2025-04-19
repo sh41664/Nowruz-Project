@@ -16,9 +16,9 @@ public class Main {
         User user1 = new User("John Doe", 25, "john@example.com", "john_doe", "password123");
         User user2 = new User("Jane Smith", 28, "jane@example.com", "jane_smith", "password456");
         users.add(user1);
-        authService.registerAccount(user1);
+        authService.registerUser(user1);
         users.add(user2);
-        authService.registerAccount(user2);
+        authService.registerUser(user2);
 
         Artist artist1 = new Artist("Taylor Swift", 33, "taylor@example.com", "taylor_swift", "artistPass1");
         Artist artist2 = new Artist("Ed Sheeran", 31, "ed@example.com", "ed_sheeran", "artistPass2");
@@ -34,8 +34,8 @@ public class Main {
         artist1.getAlbums().add(album1);
         artist2.getAlbums().add(album2);
 
-        Song song1 = new Song("Anti-Hero", "It's me, hi, I'm the problem, it's me...", "Pop", "Introspective", "2023-10-21", artist1, album1);
-        Song song2 = new Song("Bad Habits", "My bad habits lead to late nights...", "Pop", "Catchy, Dark", "2023-05-05", artist2, album2);
+        Song song1 = new Song("Anti-Hero", "It's me, hi, I'm the problem, it's me...", "Pop", "Introspective",  album1);
+        Song song2 = new Song("Bad Habits", "My bad habits lead to late nights...", "Pop", "Catchy, Dark",  album2);
         artist1.getSongs().add(song1);
         artist2.getSongs().add(song2);
         artist1.addSongToAlbum(song1, album1);
@@ -84,8 +84,8 @@ public class Main {
                 case 1 -> signUp(scanner);
                 case 2 -> {
                     boolean loggedInAccount = signIn(scanner);
-                    if (loggedInAccount != null) {
-                        System.out.println("Welcome, " + loggedInAccount + "!");
+                    if (loggedInAccount) {
+                        System.out.println("Welcome, " + true + "!");
                     }
                 }
                 case 3 -> {
