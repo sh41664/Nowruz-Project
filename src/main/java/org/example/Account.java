@@ -55,9 +55,7 @@ public abstract class Account {
 
     // Username validation
     private String validateUsername(String username) {
-        if (username == null || username.length() < 4 || username.length() > 20) {
-            throw new IllegalArgumentException("Username must be 4-20 characters");
-        }
+
         if (!username.matches("^[a-zA-Z0-9_]+$")) {
             throw new IllegalArgumentException("Username can only contain letters, numbers, and underscores");
         }

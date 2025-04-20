@@ -135,8 +135,10 @@ public class Song {
         return mainArtist;
     }
 
-    public void addComment(org.example.Comment comment1) {
-        return;
+    public org.example.Comment addComment(org.example.Comment comment1) {
+        return comment1;
+
+
     }
 
     public void setAlbum(Album album) {

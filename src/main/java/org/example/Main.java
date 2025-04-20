@@ -5,11 +5,11 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    private static List<User> users = new ArrayList<>();
-    private static List<Artist> artists = new ArrayList<>();
-    private static List<Song> songs = new ArrayList<>();
-    private static List<Album> albums = new ArrayList<>();
-    private static AuthenticationService authService = new AuthenticationService();
+    private static final List<User> users = new ArrayList<>();
+    private static final List<Artist> artists = new ArrayList<>();
+    private static final List<Song> songs = new ArrayList<>();
+    private static final List<Album> albums = new ArrayList<>();
+    private static final AuthenticationService authService = new AuthenticationService();
 
     // Initialize seed data
     public static void initializeSeedData() {
@@ -101,7 +101,7 @@ public class Main {
                 }
                 case 8 -> users.forEach(User::viewFollowedArtists);
                 case 9 -> {
-                    System.out.println("Exiting... Goodbye!");
+                    System.out.println("Exiting...!");
                     return;
                 }
                 default -> System.out.println("Invalid choice! Please try again.");
@@ -115,19 +115,6 @@ public class Main {
     }
 
 
-    private static Artist findArtistByUsername(String username) {
-        return artists.stream()
-                .filter(artist -> artist.getUsername().equals(username))
-                .findFirst()
-                .orElse(null);
-    }
-
-    private static Song findSongByTitle(String title) {
-        return songs.stream()
-                .filter(song -> song.getTitle().equals(title))
-                .findFirst()
-                .orElse(null);
-    }
 
 
     // Sign-Up Method

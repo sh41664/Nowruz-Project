@@ -1,17 +1,18 @@
 package org.example;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 
 
 public class Artist extends Account {
+    private final int age;
     private List<Song> songs = new ArrayList<>();
     private List<Album> albums = new ArrayList<>();
 
     public Artist(String name, int age, String email, String username, String password) {
         super(name, email, username, password, "Artist");
+        this.age = age;
     }
 
     @Override
@@ -30,9 +31,10 @@ public class Artist extends Account {
         displayAlbums();
     }
 
-    private String getAge() {
-        String age = null;
+    private int getAge() {
+
         return age;
+
     }
 
     // Edit Lyrics Directly
